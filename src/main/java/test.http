@@ -1,0 +1,17 @@
+####
+POST https://empro.naa.edu.az/AuthRest/api/integration/moodle/exam
+Content-Type: application/json
+ACCESS-KEY: Moodle deea5cf5-bb04-4394-a2a4-d3d0fb3e1f1d-abcd14b1-133b-4121-88b1-e779a2f2f106
+
+{"students":[
+  {"email":"random@gmail.com",
+    "studentFullName":"Eliyev Eli Veli",
+    "examDate":"11/10/2012",
+    "point":"10",
+    "subjectName":"math"},
+  {"email":"random@gmail.com",
+    "studentFullName":"Eliyev Eli Veli",
+    "examDate":"test2",
+    "point":"10",
+    "subjectName":"thing"}
+]}
