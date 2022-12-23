@@ -1,4 +1,4 @@
-package com.example.RestTemplate.entity;
+package com.example.EmproApi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
