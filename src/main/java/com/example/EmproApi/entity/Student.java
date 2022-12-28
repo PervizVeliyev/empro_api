@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class Student{
     private String email;
 
-    private String studentFullName;
+    private String studentFullname;
 
     private String examDate;
 

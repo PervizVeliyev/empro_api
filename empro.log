@@ -1,0 +1,42 @@
+2022-12-28T10:19:48.137+04:00  INFO 14012 --- [main] c.example.EmproApi.EmproApiApplication   : Starting EmproApiApplication using Java 19.0.1 with PID 14012 (C:\Users\pvaliyev\IdeaProjects\empro_api\target\classes started by pvaliyev in C:\Users\pvaliyev\IdeaProjects\empro_api)
+2022-12-28T10:19:48.151+04:00  INFO 14012 --- [main] c.example.EmproApi.EmproApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-12-28T10:19:48.725+04:00  INFO 14012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2022-12-28T10:19:48.731+04:00  INFO 14012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-28T10:19:48.731+04:00  INFO 14012 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-28T10:19:48.784+04:00  INFO 14012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-28T10:19:48.784+04:00  INFO 14012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2022-12-28T10:19:49.049+04:00  WARN 14012 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2022-12-28T10:19:49.052+04:00  INFO 14012 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-28T10:19:49.060+04:00  INFO 14012 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-28T10:19:49.070+04:00 ERROR 14012 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9092 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9092 or configure this application to listen on another port.
+
+2022-12-28T10:23:36.693+04:00  INFO 14532 --- [main] c.example.EmproApi.EmproApiApplication   : Starting EmproApiApplication using Java 19.0.1 with PID 14532 (C:\Users\pvaliyev\IdeaProjects\empro_api\target\classes started by pvaliyev in C:\Users\pvaliyev\IdeaProjects\empro_api)
+2022-12-28T10:23:36.695+04:00  INFO 14532 --- [main] c.example.EmproApi.EmproApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-12-28T10:23:37.233+04:00  INFO 14532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9094 (http)
+2022-12-28T10:23:37.239+04:00  INFO 14532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-28T10:23:37.239+04:00  INFO 14532 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-28T10:23:37.290+04:00  INFO 14532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-28T10:23:37.291+04:00  INFO 14532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 562 ms
+2022-12-28T10:23:37.564+04:00  INFO 14532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9094 (http) with context path ''
+2022-12-28T10:23:37.569+04:00  INFO 14532 --- [main] c.example.EmproApi.EmproApiApplication   : Started EmproApiApplication in 1.132 seconds (process running for 1.544)
+2022-12-28T10:23:38.587+04:00  INFO 14532 --- [Timer] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-28T10:23:38.672+04:00  INFO 14532 --- [Timer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dc4c168
+2022-12-28T10:23:38.674+04:00  INFO 14532 --- [Timer] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-28T10:24:11.033+04:00  INFO 14532 --- [Timer] c.example.EmproApi.EmproApiApplication   : [Student(email=mmisirzada.30858@naa.edu.az, studentFullname=Misirzadə Misir Bəhruz, examDate=14/12/2022, point=49, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=ncabrayilzada.30241@naa.edu.az, studentFullname=Cəbrayilzadə Nurlan Cavid, examDate=14/12/2022, point=45, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=ealiyev.30323@naa.edu.az, studentFullname=Əliyev Elcan Etibar, examDate=14/12/2022, point=49, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=vmammadov.30772@naa.edu.az, studentFullname=Məmmədov Vüqar Kərəm, examDate=14/12/2022, point=45, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=amursalov.30868@naa.edu.az, studentFullname=Mürsəlov Azər Mehman, examDate=14/12/2022, point=48, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=cahmad.30276@naa.edu.az, studentFullname=Əhməd Camal Xəlil, examDate=14/12/2022, point=41, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=fmammadov.30773@naa.edu.az, studentFullname=Məmmədov Fuad Elxan, examDate=14/12/2022, point=46, subjectName=Həyat fəaliyyətinin təhlükəsizliyi), Student(email=azinin.31291@naa.edu.az, studentFullname=Zinin Artyom Qennadiyeviç, examDate=14/12/2022, point=43, subjectName=Həyat fəaliyyətinin təhlükəsizliyi)]
+2022-12-28T10:24:11.247+04:00  INFO 14532 --- [Timer] c.example.EmproApi.EmproApiApplication   : <201 CREATED Created,{CREATED=8, DUPLICATE={count=8, list=[{examDate=14/12/2022, studentFullname=Misirzadə Misir Bəhruz, email=mmisirzada.30858@naa.edu.az, point=49}, {examDate=14/12/2022, studentFullname=Cəbrayilzadə Nurlan Cavid, email=ncabrayilzada.30241@naa.edu.az, point=45}, {examDate=14/12/2022, studentFullname=Əliyev Elcan Etibar, email=ealiyev.30323@naa.edu.az, point=49}, {examDate=14/12/2022, studentFullname=Məmmədov Vüqar Kərəm, email=vmammadov.30772@naa.edu.az, point=45}, {examDate=14/12/2022, studentFullname=Mürsəlov Azər Mehman, email=amursalov.30868@naa.edu.az, point=48}, {examDate=14/12/2022, studentFullname=Əhməd Camal Xəlil, email=cahmad.30276@naa.edu.az, point=41}, {examDate=14/12/2022, studentFullname=Məmmədov Fuad Elxan, email=fmammadov.30773@naa.edu.az, point=46}, {examDate=14/12/2022, studentFullname=Zinin Artyom Qennadiyeviç, email=azinin.31291@naa.edu.az, point=43}]}},[Server:"nginx/1.14.0 (Ubuntu)", Date:"Wed, 28 Dec 2022 06:24:11 GMT", Content-Type:"application/json;charset=UTF-8", Transfer-Encoding:"chunked", Connection:"keep-alive", Content-Security-Policy:"default-src * 'unsafe-inline' 'unsafe-eval';frame-ancestors 'self'", X-XSS-Protection:"1; mode=block", X-Frame-Options:"DENY", X-Content-Type-Options:"nosniff", "nosniff", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", Strict-Transport-Security:"max-age=31536000 ; includeSubDomains", Access-Control-Allow-Headers:"*", Access-Control-Expose-Headers:"Auth", vary:"accept-encoding"]>
+2022-12-28T10:24:18.935+04:00  INFO 14532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-28T10:24:18.941+04:00  INFO 14532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

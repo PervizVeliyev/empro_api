@@ -19,7 +19,7 @@ public class StudentRepository {
     public List<Student> findByExamDate(String date)
     {
         return jdbcTemplate.query("""
-                select * from (select u.email as email, concat(substring_index(u.lastname, ' (', 1), ' ', u.firstname, ' ',substring_index(substring_index(u.lastname, ' (', -1), ')', 1)) as studentFullName,\s
+                select * from (select u.email as email, concat(substring_index(u.lastname, ' (', 1), ' ', u.firstname, ' ',substring_index(substring_index(u.lastname, ' (', -1), ')', 1)) as studentFullname,\s
                 \t\tfrom_unixtime(gg.timecreated, '%d/%m/%Y') as examDate, floor(gg.finalgrade) as point, cctrs2.name as subjectName
                 \t\tfrom mdl_grade_grades gg
                 \t\tINNER JOIN mdl_user u ON u.id = gg.userid

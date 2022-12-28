@@ -11,7 +11,7 @@ public class StudentRowMapper implements RowMapper<Student> {
     {
         Student student = new Student();
         student.setEmail(rs.getString("email"));
-        student.setStudentFullName(rs.getString("studentFullName"));
+        student.setStudentFullname(rs.getString("studentFullname"));
         student.setExamDate(rs.getString("examDate"));
         student.setPoint(rs.getString("point"));
         student.setSubjectName(rs.getString("subjectName"));

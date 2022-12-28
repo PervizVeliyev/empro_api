@@ -4,6 +4,8 @@ import com.example.EmproApi.entity.Student;
 import com.example.EmproApi.repository.StudentRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +17,8 @@ import java.util.*;
 @RequiredArgsConstructor
 @SpringBootApplication
 public class EmproApiApplication implements CommandLineRunner {
-
+	static final Logger log =
+			LoggerFactory.getLogger(EmproApiApplication.class);
 
 	private final StudentRepository studentRepository;
 
@@ -40,22 +43,23 @@ public class EmproApiApplication implements CommandLineRunner {
 					headers.setContentType(MediaType.APPLICATION_JSON);
 					headers.set("ACCESS-KEY", "Moodle deea5cf5-bb04-4394-a2a4-d3d0fb3e1f1d-abcd14b1-133b-4121-88b1-e779a2f2f106");
 
-/*
-					List<Student> students = new ArrayList<>();
-					students.add(new Student("test1@gmail.com", "TestSoyad Test1 TestAta", "21/12/2022", "50","Xarici iqtisadi siyasət"));
-					students.add(new Student("test2@gmail.com", "testSoyad2 test2 testAta2", "21/12/2022", "40","Xarici iqtisadi siyasət"));
-					students.add(new Student("test3@gmail.com", "testSoyad3 test3 testAta3", "21/12/2022", "30","Xarici iqtisadi siyasət"));
-					students.add(new Student("test4@gmail.com", "testSoyad4 test4 testAta4", "21/12/2022", "20","Xarici iqtisadi siyasət"));
-					students.add(new Student("test5@gmail.com", "testSoyad5 test5 testAta5", "21/12/2022", "10","Xarici iqtisadi siyasət"));
-*/
 
-					List<Student> studentsList = studentRepository.findByExamDate("30/12/2022");
+//					List<Student> students = new ArrayList<>();
+//					students.add(new Student("test1@gmail.com", "TestSoyad Test1 TestAta", "26/12/2022", "55","Beynelxalq biznes"));
+//					students.add(new Student("test2@gmail.com", "testSoyad2 test2 testAta2", "26/12/2022", "45","Beynelxalq biznes"));
+//					students.add(new Student("test3@gmail.com", "testSoyad3 test3 testAta3", "26/12/2022", "35","Beynelxalq"));
+//					students.add(new Student("test4@gmail.com", "testSoyad4 test4 testAta4", "26/12/2022", "25","Beynelxalq biznes"));
+//					students.add(new Student("test5@gmail.com", "testSoyad5 test5 testAta5", "26/12/2022", "15","Beynelxalq biznes"));
+
+
+					List<Student> studentsList = studentRepository.findByExamDate("14/12/2022");
+					log.info(studentsList.toString());
 
 					String json = "{\"students\":" + new ObjectMapper().writeValueAsString(studentsList) + "}";
 					HttpEntity<String> entity = new HttpEntity<>(json, headers);
 
 					ResponseEntity<Object> res = restTemplate.exchange(postUrl, HttpMethod.POST, entity, Object.class);
-					System.out.println(res);
+					log.info(res.toString());
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
