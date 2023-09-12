@@ -31,6 +31,6 @@ public class StudentRepository {
                 \t\tINNER JOIN mdl_course_categories cctrs2 ON cctrs2.id = cctrs.parent
                 \t\twhere gg.finalgrade is not null AND gi.itemmodule = 'quiz'
                 \t\torder by gg.timecreated) as temp
-                \t\twhere temp.groupname = '1519a' and temp.examDate = ?;""",new Object[] {date}, new StudentRowMapper());
+                \t\twhere temp.examDate = ?;""",new Object[] {date}, new StudentRowMapper());
     }
 }
